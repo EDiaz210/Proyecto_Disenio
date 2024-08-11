@@ -1,0 +1,96 @@
+.catalogo{
+  padding: 5%;
+}
+
+
+.catalogo h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top{
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.card-text {
+  color: #333;
+  font-weight: bold;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-icon1 {
+  color: #f9d2d2;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.action-icon1:hover {
+  color: #f54242;
+}
+
+.action-icon2 {
+  color: rgba(70, 90, 80, 1);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.action-icon2:hover {
+  color: #2a4d29;
+}
+
+
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+
+#eliminar, #anadir {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+#anadir{
+    background-color: rgba(70, 90, 80, 1);
+    color: #fff;
+}
+
+#eliminar{
+    background-color: #f9d2d2;
+    color: #333;
+}
+
+#eliminar:hover{
+    background-color: #333;
+    color: #f9d2d2;
+}
+
+#anadir:hover{
+    background-color: #fff;
+    color: rgba(70, 90, 80, 1);
+    border: 1px solid rgba(70, 90, 80, 1);
+
+}

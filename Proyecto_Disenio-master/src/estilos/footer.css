@@ -1,0 +1,34 @@
+.footer {
+  background-color: #f9d2d2;
+  padding: 20px;
+}
+
+.footer h5 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+.footer p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.social-media span {
+  margin-right: 10px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .footer .row {
+      text-align: center;
+  }
+  
+  .footer .col-md-4 {
+      margin-bottom: 20px;
+  }
+}
+
+
+
+  
