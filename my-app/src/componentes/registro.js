@@ -72,7 +72,8 @@ function validacionRegistro(event){
 }
 function registro(){
     return(
-        <div className='container d-flex justify-content-center align-items-center' id= "login">
+        <div id='login'>
+        <div className='container d-flex justify-content-center align-items-center' >
             <div className='card p-4 shadow-lg'>
                 <form className="formularioRegistro" onSubmit={validacionRegistro}>
                     <h1>Registrarse</h1>
@@ -95,12 +96,13 @@ function registro(){
                     <div id='respuesta03'></div>
                     <h6>Caracteres especiales aceptados en el campo contraseña: *, / y @, obligatoriedad en el campo contraseña: colocación de numeros</h6>
                 
-                    <nav className="d-flex justify-content-between ">
-                        <button type='submit' className="btn btn-primary btn-sm mx-1" id='anadir'>Registrarse</button>
+                    <nav className="d-flex justify-content-center ">
+                        <button type='submit' className="btn btn-sm mx-1 me-5" id='anadir' >Registrarse</button>
                         <a href='./login'>Atrás</a>
                     </nav>
                 </form>
             </div>
+        </div>
         </div>
     );
 }

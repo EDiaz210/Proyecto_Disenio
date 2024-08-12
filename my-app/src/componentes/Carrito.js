@@ -248,7 +248,7 @@ function Carrito() {
                 products.map((product, index) => renderProduct(product, index))
             )}
 
-            <div className="botonesCarrito container d-flex justify-content-center me-2">
+            <div className="botonesCarrito  d-flex justify-content-center me-2">
                 <button className="btn btn-sm me-2 mx-1" onClick={Comprar}>Comprar</button>
                 <button className="btn btn-sm me-2 mx-1" onClick={cancelarCarrito}>Cancelar</button>
                 <button className="btn btn-sm me-2 mx-1" onClick={vaciarCarrito}>Vaciar carrito</button>

@@ -32,10 +32,10 @@ function Login() {
   };
 
   return (
-    <div className='container d-flex justify-content-center align-items-center' id="login">
-      <div className='card p-4 shadow-lg'>
+    <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '50vh' }} id ='login'>
+      <div className='card p-3 shadow-lg' style={{ width: '100%', maxWidth: '350px' }}>
         <form className="formularioLogin" onSubmit={iniciar}>
-          <nav className="mb-4">
+          <nav className="mb-3">
             <h3 className="text-center">Inicio de sesión</h3>
           </nav>
           <div className="form-group mb-3">
@@ -51,7 +51,7 @@ function Login() {
               required
             />
           </div>
-          <div className="form-group mb-4">
+          <div className="form-group mb-3">
             <label htmlFor="contra">
               <h6>Ingrese su contraseña:</h6>
             </label>
@@ -65,12 +65,12 @@ function Login() {
             />
           </div>
           <nav className="d-flex justify-content-between">
-            <button type="submit" className="btn btn-primary" id='anadir'>Iniciar sesión</button>
-            <button type="button" className="btn btn-secondary" id="eliminar" onClick={cancelar}>Cancelar</button>
+            <button type="submit" className="btn  mx-1" id="anadir">Iniciar sesión</button>
+            <button type="button" className="btn  mx-1" id="eliminar" onClick={cancelar}>Cancelar</button>
           </nav>
           <div className="mt-3 d-flex justify-content-between">
-            <a href="./olvidarContra" className="text-muted">¿Has olvidado tu contraseña?</a>
-            <a href="./registro" className="text-muted">Registrarse</a>
+            <a href="./olvidarContra" className="text-muted small">¿Has olvidado tu contraseña?</a>
+            <a href="./registro" className="text-muted small">Registrarse</a>
           </div>
         </form>
       </div>
@@ -79,4 +79,3 @@ function Login() {
 }
 
 export default Login;
-
