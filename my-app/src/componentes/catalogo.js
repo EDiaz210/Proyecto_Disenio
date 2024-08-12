@@ -65,7 +65,7 @@ const products = [
 ];
 
 const ProductCard = ({ image,describe, name, price, onClick }) => (
-  <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+  <div className="col-lg-3 row-md-4 col-sm-6 mb-4">
     <div className="card h-100" onClick={onClick}>
       <img src={image} alt={name} className="card-img-top" />
       <div className="card-body">

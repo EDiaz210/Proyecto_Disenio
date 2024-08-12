@@ -60,11 +60,11 @@ function Favoritos() {
                             <div className="card-body">
                                 <h5 className="card-title">{producto.descripcion}</h5>
                                 <p className="card-text">SKU: {producto.sku}</p>
-                                <div className="producto-tallas mb-2">
+                                <div className="producto-tallas mb-2 justify-content-center">
                                     <p>Tallas:</p>
-                                    <div className="btn-group">
+                                    <div className="btn-grou custom-center">
                                         {producto.tallas.map((talla, tallaIndice) => (
-                                            <button key={tallaIndice} className="btn btn-outline-dark btn-sm me-2">{talla}</button>
+                                            <button key={tallaIndice} className="btn btn-outline-dark btn-sm me-2 mx-1">{talla}</button>
                                         ))}
                                     </div>
                                 </div>
