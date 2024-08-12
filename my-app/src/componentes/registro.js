@@ -96,7 +96,7 @@ function registro(){
                     <h6>Caracteres especiales aceptados en el campo contraseña: *, / y @, obligatoriedad en el campo contraseña: colocación de numeros</h6>
                 
                     <nav className="d-flex justify-content-between ">
-                        <button type='submit' className="btn btn-primary btn-sm" id='anadir'>Registrarse</button>
+                        <button type='submit' className="btn btn-primary btn-sm mx-1" id='anadir'>Registrarse</button>
                         <a href='./login'>Atrás</a>
                     </nav>
                 </form>
