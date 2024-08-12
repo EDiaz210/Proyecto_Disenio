@@ -9,8 +9,8 @@ function Carrito() {
         {
             foto: "https://ae01.alicdn.com/kf/S7d5da5a496c44a85bd59c748ecb5a80eF.jpg_640x640Q90.jpg_.webp",
             descripcion:  "Cuero negro con bordado",
-            talla: 36,
-            color: "Negro",
+            talla: 36, 
+            color: "Negro", 
             cantidad: 3, 
             precioUnidad: 12.45, 
             precioTotal: 37.35
@@ -18,7 +18,7 @@ function Carrito() {
         { 
             foto: "https://ae01.alicdn.com/kf/Seccdfd3808b6481ca949678e7f041bbff.jpg_640x640Q90.jpg_.webp",
             descripcion:  "Cuero rojo con bordado",
-            talla: 40,
+            talla: 40, 
             color: "Rojo",
             cantidad: 2, 
             precioUnidad: 21.0, 
@@ -27,7 +27,7 @@ function Carrito() {
         {
             foto: "https://i.pinimg.com/736x/45/8a/1e/458a1e3587f8e69c5fe9428799ffe511.jpg",
             descripcion:  "Con bordados a mano",
-            talla: 30,
+            talla: 30, 
             color: "Blanco",
             cantidad: 1, 
             precioUnidad: 21.0, 
@@ -36,7 +36,7 @@ function Carrito() {
         {
             foto: "https://m.media-amazon.com/images/I/61gGNweciqL._AC_UF894,1000_QL80_.jpg",
             descripcion: "Con malla gris y blancos", 
-            talla: 35,
+            talla: 35, 
             color: "Gris",
             cantidad: 2,
             precioUnidad: 25.50, 
@@ -138,40 +138,40 @@ function Carrito() {
     function actualizarCarrito(){
         setProducts([
             {
-                foto: "https://lecoqsportif.com.ar/wp-content/uploads/2023/11/64a4ae67877a9-2310203_4-1024x1024.webp",
-                descripcion:  "Cuero violeta con bordado",
-                talla: 36,
-                color: "Amarillo",
-                cantidad: 3, 
+                foto: "https://ae01.alicdn.com/kf/S7d5da5a496c44a85bd59c748ecb5a80eF.jpg_640x640Q90.jpg_.webp",
+                descripcion:  "Cuero negro con bordado",
+                talla: 36, 
+                color: "Amarillo", 
+                cantidad: 4, 
                 precioUnidad: 12.45, 
-                precioTotal: 37.35
+                precioTotal: 49.8
             }, 
-            {
-                foto: "https://i.blogs.es/413753/converse-bordadas/original.jpeg",
-                descripcion:  "Cuero rojo con bordado",
-                talla: 40,
-                color: "Rojo",
-                cantidad: 2, 
-                precioUnidad: 20.0, 
-                precioTotal: 40.0
-            },
             { 
-                foto: "https://img.kwcdn.com/product/1e133b32afc/ba8fa9a2-234c-4d35-9309-c3024eaaec05_1200x1200.jpeg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
-                descripcion:  "Con malla amarilla",
-                talla: 34,
-                color: "Negro",
+                foto: "https://ae01.alicdn.com/kf/Seccdfd3808b6481ca949678e7f041bbff.jpg_640x640Q90.jpg_.webp",
+                descripcion:  "Cuero rojo con bordado",
+                talla: 40, 
+                color: "Rojo",
+                cantidad: 5, 
+                precioUnidad: 21.0, 
+                precioTotal: 105
+            },
+            {
+                foto: "https://i.pinimg.com/736x/45/8a/1e/458a1e3587f8e69c5fe9428799ffe511.jpg",
+                descripcion:  "Con bordados a mano",
+                talla: 30, 
+                color: "Blanco",
                 cantidad: 1, 
-                precioUnidad: 46.0, 
-                precioTotal: 46.0
+                precioUnidad: 21.0, 
+                precioTotal: 21.0
             }, 
             {
-                foto: "https://m.media-amazon.com/images/I/716XwYPyENL._AC_UF894,1000_QL80_.jpg",
-                descripcion: "Con malla cafe y blancos", 
-                talla: 42,
-                color: "Blanco",
+                foto: "https://m.media-amazon.com/images/I/61gGNweciqL._AC_UF894,1000_QL80_.jpg",
+                descripcion: "Con malla gris y blancos", 
+                talla: 35, 
+                color: "Negro",
                 cantidad: 2,
-                precioUnidad: 34.50, 
-                precioTotal: 69.0
+                precioUnidad: 25.50, 
+                precioTotal: 51.0
             }
         ]);
     }
@@ -247,7 +247,7 @@ function Carrito() {
             ) : (
                 products.map((product, index) => renderProduct(product, index))
             )}
-
+            <h2>Total: {products.reduce((total, product) => total + product.precioTotal, 0).toFixed(2)}</h2>
             <div className="botonesCarrito  d-flex justify-content-center me-2">
                 <button className="btn btn-sm me-2 mx-1" onClick={Comprar}>Comprar</button>
                 <button className="btn btn-sm me-2 mx-1" onClick={cancelarCarrito}>Cancelar</button>
